@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aashish Kumar Yadav — Computer Engineering student, web developer, and cybersecurity enthusiast.">
+  <title>Aashish Kumar Yadav — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" aria-label="Loading website"><span class="loader-mark">AKY</span><span>Preparing experience</span></div>
+  <div id="progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
+  <canvas id="orb-canvas" aria-hidden="true"></canvas>
+
+  <header id="header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="Aashish Kumar Yadav home"><span>AK</span><i>Y</i></a>
+      <nav id="navbar" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Switch color theme"><i class="fa-solid fa-sun"></i></button>
+        <button class="menu-btn" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Available for opportunities</p>
+        <h1>Engineering thoughtful <em>digital</em> experiences.</h1>
+        <p class="hero-text">I’m <strong>Aashish Kumar Yadav</strong>, a Computer Engineering student in Nepal building secure, useful web products and learning at the edge of AI and cybersecurity.</p>
+        <div class="hero-cta"><a href="#projects" class="button button-primary">Explore my work <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#contact" class="button button-quiet">Let’s connect <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="hero-links"><a href="https://github.com/aashishyadav-in" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="https://www.linkedin.com/in/aashish-yadav-97485b406" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="portrait-wrap"><img src="assets/profile.jpg" alt="Portrait of Aashish Kumar Yadav"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+        <div class="floating-card card-code"><span>01</span><b>Build</b><small>web experiences</small></div>
+        <div class="floating-card card-security"><i class="fa-solid fa-shield-halved"></i><b>Secure</b><small>by design</small></div>
+      </div>
+    </section>
+
+    <section id="about" class="section shell">
+      <div class="section-intro reveal"><p class="eyebrow">01 — Profile</p><h2>Curious by nature.<br>Intentional by design.</h2></div>
+      <div class="about-layout reveal">
+        <p class="lead">I combine engineering fundamentals with a sharp eye for interfaces. My focus is on turning complex problems into simple, reliable experiences that people enjoy using.</p>
+        <div class="fact-grid"><div><span>Based in</span><b>Nepal</b></div><div><span>Studying</span><b>Computer Engineering</b></div><div><span>Focus</span><b>Web & Security</b></div><div><span>Open to</span><b>Internships</b></div></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-tint"><div class="shell">
+      <div class="section-head reveal"><div><p class="eyebrow">02 — Capabilities</p><h2>Tools I use to move ideas forward.</h2></div><p>Always learning, always building. These are the technologies I’m most comfortable putting to work.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal" data-level="95"><div><i class="fa-brands fa-html5"></i><b>Frontend</b></div><span>HTML · CSS · JavaScript</span><div class="skill-line"><i></i></div><small>95%</small></article>
+        <article class="skill-card reveal" data-level="85"><div><i class="fa-solid fa-code"></i><b>Programming</b></div><span>Python · Java · C/C++</span><div class="skill-line"><i></i></div><small>85%</small></article>
+        <article class="skill-card reveal" data-level="90"><div><i class="fa-solid fa-shield-halved"></i><b>Security</b></div><span>OWASP · Nmap · Wireshark</span><div class="skill-line"><i></i></div><small>90%</small></article>
+        <article class="skill-card reveal" data-level="88"><div><i class="fa-brands fa-git-alt"></i><b>Workflow</b></div><span>Git · GitHub · Firebase</span><div class="skill-line"><i></i></div><small>88%</small></article>
+      </div>
+    </div></section>
+
+    <section id="projects" class="section shell">
+      <div class="section-head reveal"><div><p class="eyebrow">03 — Selected work</p><h2>Projects with a purpose.</h2></div><a class="text-link" href="https://github.com/aashishyadav-in" target="_blank" rel="noopener">See GitHub <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="project-grid">
+        <article class="project-card reveal"><div class="project-image"><img src="assets/project1.jpg" alt="AI Study Platform project preview"><span>Featured</span></div><div class="project-body"><p class="project-index">01 / EDUCATION</p><h3>AI Study Platform</h3><p>Study workspace concept combining OCR, smart notes, PDF upload, authentication, and an admin dashboard.</p><div class="tag-list"><span>AI</span><span>Firebase</span><span>OCR</span></div><a href="#contact" class="card-link">Discuss this project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-image"><img src="assets/project2.jpg" alt="Personal portfolio project preview"><span>Live</span></div><div class="project-body"><p class="project-index">02 / WEB</p><h3>Personal Portfolio</h3><p>A responsive, high-performance portfolio that presents work clearly and makes it easy to get in touch.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#home" class="card-link">View experience <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-image"><img src="assets/project3.jpg" alt="Cyber Security Lab project preview"><span>In progress</span></div><div class="project-body"><p class="project-index">03 / SECURITY</p><h3>Cyber Security Lab</h3><p>A hands-on environment for exploring Linux, networks, ethical hacking, and web-security practices.</p><div class="tag-list"><span>Kali Linux</span><span>Networking</span><span>OWASP</span></div><a href="#contact" class="card-link">Ask about it <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+      </div>
+    </section>
+
+    <section class="section section-tint"><div class="shell github-layout reveal"><div><p class="eyebrow">04 — Open source</p><h2>Building in public.</h2><p>Follow my learning journey and projects on GitHub.</p><a href="https://github.com/aashishyadav-in" target="_blank" rel="noopener" class="button button-quiet">Visit GitHub <i class="fa-brands fa-github"></i></a></div><div class="github-stats" id="github-stats" aria-live="polite"><div><b id="github-repos">—</b><span>Repositories</span></div><div><b id="github-followers">—</b><span>Followers</span></div><div><b id="github-following">—</b><span>Following</span></div></div></div></section>
+
+    <section id="education" class="section shell"><div class="section-intro reveal"><p class="eyebrow">05 — Journey</p><h2>Learning with direction.</h2></div><div class="timeline reveal"><article><p>2024 — Present</p><div><h3>B.Tech Computer Engineering</h3><b>MRSPTU, Punjab</b><span>Building foundations in programming, web development, and systems.</span></div></article><article><p>Ongoing</p><div><h3>Cybersecurity practice</h3><b>Independent learning</b><span>Exploring Kali Linux, networking, web security, Burp Suite, Nmap, and Wireshark.</span></div></article></div></section>
+
+    <section class="section certificates shell"><div class="section-head reveal"><div><p class="eyebrow">06 — Credentials</p><h2>Proof of progress.</h2></div><p>Click a certificate to view it in full.</p></div><div class="certificate-grid"><a class="certificate-card reveal" href="assets/certificate1.jpg" target="_blank" rel="noopener"><i class="fa-solid fa-shield-halved"></i><span>Cybersecurity</span><small>View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></small></a><a class="certificate-card reveal" href="assets/certificate2.jpg" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i><span>Web Development</span><small>View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></small></a><a class="certificate-card reveal" href="assets/certificate3.jpg" target="_blank" rel="noopener"><i class="fa-solid fa-laptop-code"></i><span>Programming</span><small>View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></small></a><a class="certificate-card reveal" href="assets/certificate4.jpg" target="_blank" rel="noopener"><i class="fa-solid fa-award"></i><span>Professional</span><small>View credential <i class="fa-solid fa-arrow-up-right-from-square"></i></small></a></div></section>
+
+    <section id="contact" class="section contact-section"><div class="shell contact-layout"><div class="reveal"><p class="eyebrow">07 — Contact</p><h2>Let’s make something <em>meaningful.</em></h2><p>Have an internship, collaboration, or interesting problem in mind? I’d love to hear from you.</p><a href="https://www.linkedin.com/in/aashish-yadav-97485b406" target="_blank" rel="noopener" class="email-link">Connect on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><form id="contact-form" class="contact-form glass reveal"><label>Your name<input type="text" name="from_name" placeholder="Your name" required autocomplete="name"></label><label>Email address<input type="email" name="reply_to" placeholder="you@example.com" required autocomplete="email"></label><label>Subject<input type="text" name="subject" placeholder="How can I help?" required></label><label>Message<textarea name="message" rows="4" placeholder="Tell me a little about your idea..." required></textarea></label><button class="button button-primary" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button><p id="contact-status" class="contact-status" role="status" aria-live="polite"></p></form></div></section>
+  </main>
+
+  <footer><div class="shell"><a class="brand" href="#home"><span>AK</span><i>Y</i></a><p>Designed & built by Aashish Kumar Yadav</p><div><a href="https://github.com/aashishyadav-in" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/aashish-yadav-97485b406" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></div><small>© <span id="year"></span> Aashish Kumar Yadav</small></div></footer>
+
+  <aside class="assistant-widget"><button id="assistant-toggle" class="assistant-toggle" aria-label="Open portfolio assistant" aria-expanded="false"><i class="fa-solid fa-sparkles"></i><span>Ask Aashish</span></button><div id="assistant-panel" class="assistant-panel" hidden><div class="assistant-title"><span><i class="fa-solid fa-sparkles"></i> Portfolio assistant</span><button id="assistant-close" aria-label="Close assistant"><i class="fa-solid fa-xmark"></i></button></div><div id="assistant-messages" class="assistant-messages"><p class="assistant-bot">Hi! I can help you explore Aashish’s skills, projects, or contact details.</p></div><div class="quick-questions"><button data-question="skills">What are your skills?</button><button data-question="projects">Show projects</button><button data-question="contact">How can I contact you?</button></div></div></aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
